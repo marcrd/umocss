@@ -1,0 +1,22 @@
+<h1>{{{title}}}</h1>
+<p>{{{body}}}</p>
+
+{{#if isEditing}}
+	<form>
+		<div class="form-group">
+			<label for="title">Title</label>
+			{{ember-ckeditor value=title on-change="titleChanged"}}
+			<!-- {{input id="website-help.title" class="form-control" value=website-help.title}} -->
+		</div>
+
+		<div class="form-group">
+			<label for="body">Body</label>
+			{{ember-ckeditor value=body on-change="bodyChanged"}}
+<!-- 					{{textarea id="website-help.body" class="form-control" rows="15" value=website-help.body}} -->
+		</div>
+
+		<button class="btn btn-primary" {{action 'save' title body}}>Save</button>
+	</form>
+{{else}}
+	<button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+{{/if}}

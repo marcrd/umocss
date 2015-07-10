@@ -1,0 +1,91 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" %> 
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="<%=asset_path "" %>" media="screen">
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+<div class="vertical-menu">
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Housemates/Tenants</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="movingResources">Move in/out</a></li>
+        <li class="active"><a href="money">Money</a></li>
+        <li><a href="partyTips">Safety</a></li>
+
+         <li class="dropdown">
+          <a href="moreResources" class="dropdown-toggle" data-toggle="dropdown">More Resources<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="communityResources">Business and Community Resources</a></li>
+              <li><a href="campusResources">Campus Resources</a></li>
+              <li><a href="checklists">Checklists and Worksheets</a></li>
+              <li><a href="healthandsafeResources">Healthy and Safe Living</a></li>
+              <li><a href="housemateResources">Housemate Resources</a></li>
+              <li><a href="landlordResources">Landlord Resources</a></li>
+              <li><a href="moreResources">Non-Profit Orginizations</a></li>
+              <li><a href="otherResources">Other Resources</a></li>
+              <li><a href="parentResources">Parent Resources</a></li>
+              <li><a href="repairs">Repairs</a></li>
+              <li><a href="forms">Sample Forms</a></li>
+              <li><a href="studentTentantResources">Students/Tenants</a></li>
+              <li><a href="townResources">Town Resources</a></li>
+              <li><a href="transportationResources">Transportation</a></li>
+
+            </ul>
+        </li>
+        
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
+   <h2>Money and Finances</h2>
+          <div class="slideMFR" style="cursor: pointer;">Show/Hide</div>
+            <div class="viewMFR">
+              <ul>
+                <!--<li><a target="_blank" href="pdf.php?keyPhrase=aawCampusResources">Attend a Workshop</a></li>-->
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="pdf.php?keyPhrase=resAvgUpfrontCosts">Average Upfront Costs</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.umassfive.coop/plugin_assets/helpers/javascripts/tiny_mce/plugins/filemanager/files/pdf/Budgeting-Essentials.pdf">Budgeting Essentials</a></li>
+            
+                <li><a href="http://www.umocss.org/Library/images/OWL%20Screenshots/UMass%20Five%20Spreadsheet.jpg" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" target="_blank">Calculating available funds for rent, utilities & food</a> (<a href="http://umoch.org/files/UMASS%20Five%20Spreadsheet.xlsx">Download here</a>)</li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="pdf.php?keyPhrase=resChecksAndChecking">Checks and Checking Accounts</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="pdf.php?keyPhrase=resCompareCosts">Comparing Costs Worksheet</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="http://www.annualcreditreport.com/">Credit Reports, Free</a></li>
+                       <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="pdf.php?keyPhrase=goGreen">Go Green & Save</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="http://www.myfico.com/">Credit Reports, How to Read</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="http://www.wikihow.com/Balance-a-Checkbook">How to Balance Your Checkbook</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="http://banking.about.com/od/checkingaccounts/ig/How-to-Write-a-Check/">How to Write Checks</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.youtube.com/channel/UC9xCkqX6xlUWIkOe4Ti8LEg">Living in the Red (Video)</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="pdf.php?keyPhrase=resManageMoneyHousemates">Managing Money with Housemates</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.umassfive.coop/plugin_assets/helpers/javascripts/tiny_mce/plugins/filemanager/files/pdf/Money%20Gobblers%20flier.pdf">Money Gobblers</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="http://www.umass.edu/studentlife/ocsc/living/insurance">Renters Insurance Information</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.umassfive.coop/blog/posts/31-days-of-saving">Saving Tips</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.saltmoney.org/content/media/Article/talking-to-roommates-about-money/_/R-101-2224?Endeca_user_segments=undefined">Talking to Housemates about Money (Article) </a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.youtube.com/watch?v=mzBxDcLdW0I&list=UU9xCkqX6xlUWIkOe4Ti8LEg">Talking to Housemates about Money (Video) </a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="https://www.umassfive.coop/plugin_assets/helpers/javascripts/tiny_mce/plugins/filemanager/files/pdf/Money%20matters%20forms%20wallet%20contents.pdf">Your Wallet Contents</a></li>
+                <li><a target="_blank" onClick="trackOutboundLink(this, 'Outbound Links', this.href);" href="pdf.php?keyPhrase=resWaterAndSewageCharges">Water and Sewage Charges</a></li>
+              </ul>
+            </div>
+            
+
+
+<div id="whitespace"></div>
+</div>

@@ -1,0 +1,39 @@
+source 'https://rubygems.org'
+
+
+
+gem 'mysql2'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jsonapi-resources'
+gem "sass-rails", "~> 4.0.3"
+gem "uglifier", ">= 1.3.0"
+gem 'jquery-rails', '~> 3.0.0'
+gem "ruby-lsapi"
+gem 'therubyracer'
+gem "ember-cli-rails"
+gem 'i18n'
+gem 'jbuilder', '~> 1.2'
+
+group :development do
+  gem "better_errors"
+  gem "meta_request"
+  gem "quiet_assets"
+  gem "spring"
+end
+
+group :development, :test do
+  gem "capybara"
+  gem "capybara-screenshot"
+  gem "database_cleaner"
+  gem "factory_girl_rails"
+  gem "faker"
+  gem "poltergeist"
+  gem "rspec-rails"
+  gem "rubocop"
+  gem "shoulda-matchers"
+  gem "spring-commands-rspec"
+end
+
+
+
+

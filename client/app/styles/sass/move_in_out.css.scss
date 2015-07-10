@@ -1,0 +1,61 @@
+// Place all the styles related to the MoveInOut controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul {
+  list-style-image: url(http://www.umocss.org/Library/images/maroonbox.jpg);
+  margin-right: 6px;
+}
+
+#printAndEmail li {
+  display:inline;
+  line-height:  15px;
+  margin-left: 50px;
+}
+
+#printable {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+body a {
+    color: #881c1c;
+}
+
+body a:hover {
+    color: #000000;
+}
+
+body a:active {
+    color: #000000;
+}
+
+#printOnly {
+	display: none;
+}
+
+@media print {
+	html, body *{
+  height: 80px;
+	visibility: hidden;    
+	}
+  #printOnly {
+	display: block;
+	}
+  #printable, #printable * {
+    visibility: visible;	
+ 	}
+  #printable {
+    padding-right: 0%;
+    padding-left: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #printable a[href]:after {
+   display:none; 
+  } 
+  #printAndEmail{
+   display: none;
+  }
+}

@@ -1,0 +1,19 @@
+<h1>Sign up:</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  	<h2>
+	  	First Name: {{input value=firstName}}
+	  	Last Name: {{input value=lastName size="3"}}
+	  	Contact Name: {{input value=contactName}}
+	  	Contact Information: {{input value=contactInfo}}
+	  	Primary Email: {{input value=primaryEmail type="email"}}
+	  	Secondary Email: {{input value=secondaryEmail type="email"}}
+	  	Primary Phone Number: {{input value=primaryPhone}}
+	  	Secondary Phone Number: {{input value=secondaryPhone}}
+	  	Password: {{input value=password type="password"}}
+	  	Password Confirmation: {{input value=passwordConfirm}}
+	  	<button {{action 'createUser' primaryEmail}}>Register</button>
+	</h2>
+  </div>
+</div>

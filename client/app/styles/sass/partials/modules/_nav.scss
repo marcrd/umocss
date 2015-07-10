@@ -1,0 +1,556 @@
+/* 
+  _   _             _             _   _             
+ | \ | |           (_)           | | (_)            
+ |  \| | __ ___   ___  __ _  __ _| |_ _  ___  _ __  
+ | . ` |/ _` \ \ / / |/ _` |/ _` | __| |/ _ \| '_ \ 
+ | |\  | (_| |\ V /| | (_| | (_| | |_| | (_) | | | |
+ |_| \_|\__,_| \_/ |_|\__, |\__,_|\__|_|\___/|_| |_|
+                       __/ |                        
+                      |___/                          
+===============================================================*/
+$width-small: 500px;
+$width-medium: 800px;
+$width-lowres: 960px;
+$width-highres: 1080px;
+$width-hd: 1250px;
+$width-large: 1360px;
+
+
+/* =========== Multi Column Dropdown ============== */
+.dropdown-menu {
+  min-width: 300px;
+}
+
+.dropdown-menu.columns-2 {
+  min-width: 400px;
+}
+
+.multi-column-dropdown {
+  list-style: none;
+}
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #666;
+  white-space: normal;
+  font-size: 16px;
+}
+
+.multi-column-dropdown {
+
+  padding-left: 5px;
+}
+
+
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f5f5f5;
+}
+ 
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 200px !important;
+    overflow-x: hidden;
+  }
+}
+
+.dropdown-menu li a {
+  padding: 5px 10px !important;
+  font-weight: 300;
+}
+
+
+/*===========================================*/
+
+.dropdown-menu  li a {
+
+      font-size: 16px;
+
+    @media screen and (min-width: $width-large) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: $width-hd) {
+        font-size: 14px;
+    }
+       @media screen and (max-width: $width-highres) {
+        font-size: 12px;
+     }
+
+   
+}
+
+
+.dropdown .dropdown-menu a {
+  color: #fff;
+}
+
+.dropdown .dropdown-menu:hover {
+  background-color: #666;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+   color: white;
+}
+
+
+.dropdown:hover .dropdown-menu, .dropdown:active .dropdown-menu {
+    display: block;
+    background-color: #666;
+    opacity: 0.9;
+    filter: alpha(opacity=90); 
+ }
+
+
+
+.dropdown:hover .dropdown-menu li a:after  {
+
+  content: "";
+
+} 
+
+
+
+.navigation .navbar-collapse {
+
+  background-color: white;
+
+   border-color: transparent;
+   border-radius: 0;
+}
+
+.navigation .navbar {
+  border-color: transparent;
+   border: 0;
+   
+
+   }
+
+   .navigation .navbar a {
+   @media screen and (min-width: $width-large) {
+
+      font-size: 16px;
+
+   }
+
+  
+
+    @media screen and (max-width: $width-hd) {
+
+        font-size: 14px;
+
+    }
+
+      @media screen and (max-width: $width-highres) {
+
+        font-size: 12px;
+     }
+
+    
+
+     
+
+
+
+}
+
+
+.navigation li a:after {
+
+
+}
+
+.navigation .last a:after  {
+ // content:"";
+}
+
+.navigation .register a {
+  text-decoration: none;
+  color: #881c1c !important;
+  
+}
+.navigation .register a:after {
+
+  //content:""; 
+}
+
+.navigation .register  {
+
+ 
+
+}
+
+
+/* #nav {
+    background-color: #fff;
+    width: 100%;
+    z-index: 10;
+
+@media screen and (min-width: $width-large) {
+    padding-top: 7%;
+    margin-bottom: 20px;
+
+  }
+  @media screen and (min-width: $width-hd) {
+    padding-top: 9%;
+    margin-bottom: 20px;
+
+  }
+
+   @media screen and (min-width: $width-highres){
+
+    padding-top: 10%;
+   }
+
+  @media screen and (min-width: $width-lowres) {
+    
+    width: 100%;
+  }
+
+  @media screen and (min-width: $width-medium) {
+
+    width: 100%;
+  }
+  @media screen and (min-width: $width-small) {
+    width: 100%;
+
+  }
+}
+
+#nav:after {
+
+    display:table;
+    clear:both; 
+
+ @media screen and (min-width: $width-large) {
+    
+    
+  }
+
+  @media screen and ($width-lowres) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $width-medium) {
+   
+  }
+  @media screen and (min-width: $width-small) {
+   
+  }
+}
+
+#nav ul {
+
+   padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+  @media screen and (min-width: $width-large) {
+   
+  }
+
+  @media screen and ($width-lowres) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $width-medium) {
+   
+  }
+  @media screen and (min-width: $width-small) {
+   
+  }
+
+  }
+
+  #nav ul li {
+
+    margin: 0px;
+        display:inline;
+        float: left;
+        background-color: #fff;
+    @media screen and (min-width: $width-large) {
+        
+
+
+      }
+
+      @media screen and ($width-lowres) {
+   
+  }
+
+      @media screen and (min-width: $width-medium) {
+       
+      }
+      @media screen and (min-width: $width-small) {
+       
+      }
+  }
+
+  #nav a {
+    text-decoration: none !important;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+        display:block;
+         color:#000;
+          margin-left: auto;
+        margin-right: auto;
+    @media screen and (min-width: $width-large) {
+        
+        font-size: 1.1em;
+        padding:0 10px;
+         margin-bottom: 20px;
+       
+
+      }
+
+      @media screen and (min-width: $width-hd) {
+        font-size: .9em;
+  }
+
+      @media screen and (min-width: $width-highres) {
+        font-size: .8em;
+  }
+
+      @media screen and (min-width: $width-lowres) {
+   font-size: .7em;
+  }
+
+      @media screen and (min-width: $width-medium) {
+       
+      }
+      @media screen and (min-width: $width-small) {
+       
+      }
+
+  }
+
+
+#nav > ul:first-child {
+
+padding-left: 5%;
+z-index: 50;
+
+}
+
+
+   #nav > ul > li {
+    @media screen and (min-width: $width-large) {
+
+      
+      
+      }
+
+      @media screen and (mad-width: $width-lowres) {
+  }
+
+   @media screen and (mad-width: $width-highres) {
+
+  }
+
+
+      @media screen and (min-width: $width-medium) {
+       
+      }
+      @media screen and (min-width: $width-small) {
+       
+      }
+   
+  }
+
+  
+ #nav > ul > li:before {
+   content: " | ";
+   float: right;
+   padding-top: 3px;
+   color: #aaa;
+  
+    
+ }
+
+ #nav > ul > li:hover {
+
+  background-color: #aaa;
+  padding-bottom: none!important;
+  height: 25px;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+
+ }
+
+ #searchdiv {
+  display: none !important;
+ }
+
+ #bannertext
+
+#nav  > ul > li > ul > li {
+  content:"" !important;
+  @media screen and (min-width: $width-large) {
+         
+         padding-top: 4px;
+      }
+
+      @media screen and (mad-width: $width-lowres) {
+  }
+
+   @media screen and (mad-width: $width-highres) {
+
+  }
+
+
+      @media screen and (min-width: $width-medium) {
+       
+      }
+      @media screen and (min-width: $width-small) {
+       
+      }
+
+}
+
+#nav  > ul > li > ul > li:after {
+  content:"" !important;
+}
+ 
+#nav ul ul {
+        display: none;
+        position: absolute;
+        border: none !important;
+
+      @media screen and (min-width: $width-large) {
+        
+      
+        top: 25px;
+        width: 50%;
+      }
+
+      @media screen and ($width-lowres) {
+
+  }
+
+      @media screen and (min-width: $width-medium) {
+       
+      }
+      @media screen and (min-width: $width-small) {
+       
+      }
+}
+
+#nav ul li:hover > ul {
+  display:inherit;
+  @media screen and (min-width: $width-large) {
+        
+      }
+
+      @media screen and ($width-lowres) {
+       
+      }
+
+      @media screen and (min-width: $width-medium) {
+     
+      }
+      @media screen and (min-width: $width-small) {
+      
+      }
+}
+
+#nav ul ul li { 
+
+        position: relative;    
+        padding: 0;
+        float: left;
+        z-index: 5;
+        background-color: #aaa;
+        opacity: 0.95;
+        filter: alpha(opacity=95); 
+       border-bottom: none !important;
+       content:"" !important;
+      @media screen and (min-width: $width-large) {
+          width: 60%;
+      }
+
+      @media screen and ($width-lowres) {
+      
+    }
+      @media screen and (min-width: $width-medium) {
+        
+      }
+      @media screen and (min-width: $width-small) {
+        
+      }
+  }
+
+  #nav ul ul li:hover {
+    background-color: #eee;
+ @media screen and (min-width: $width-large) {
+       
+      }
+
+      @media screen and ($width-lowres) {
+      
+    }
+      @media screen and (min-width: $width-medium) {
+        
+      }
+      @media screen and (min-width: $width-small) {
+        
+      }
+
+  }
+
+  #loginRegister a {
+
+    display: none;
+  }
+
+  #loginRegister {
+    display: none;
+    
+  
+
+
+    @media screen and (min-width: $width-large) {
+            
+            
+            height: 40px;
+             margin-right: -570%;
+             margin-top: -4%;
+             z-index: 40;
+             padding: 1px;
+
+        }
+
+        @media screen and (min-width: $width-hd) {
+      }
+
+   @media screen and ($width-highres) {
+        
+      }
+
+      @media screen and ($width-lowres) {
+      
+    }
+      @media screen and (min-width: $width-medium) {
+        
+      }
+      @media screen and (min-width: $width-small) {
+        
+      }
+  }
+
+  #loginRegister:hover {
+
+    background-color: #AD2424;
+  }
+
+  #loginRegister a {
+
+    color: #FFF;
+    margin-bottom: 20px;
+  }
+
+*/

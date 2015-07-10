@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" %> 
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="<%=asset_path "" %>" media="screen">
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+    <div class="banner_top">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="navbar-left"><a href="http://www.umass.edu"><img id="umass_text" src="<%=asset_path "umass_white.png" %>"></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              
+                   <li class="navbar-right"><button type="submit" class="btn-search"><img id="personalBannerSearchLogo" src="<%=asset_path "search.png" %>"></button></li>
+                    <li class="navbar-right"><input type="text" class="form-control" placeholder="Search..."></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="banner_text">
+     <nav class="navbar navbar-default" role="navigation">
+       <ul class="navbar navbar-nav navbar-left" role="navigation">
+        <li><span> Off Campus Student Services </span></li>
+        </ul>
+       </nav>
+       </div>
+     
+
+ 
+    <div class="navigation">
+      <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="divider-vertical"><%= link_to "Home",  root_path %></li>
+           
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Off Campus Student Center">The Center</a>
+                  <ul class="dropdown-menu multi-column columns-2">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/about-campus-student-services">Amenities and Features</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/campus-student-life-coordinators">The Staff</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/about-campus-student-services/printing">Printing</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="https://www.google.com/maps/place/UMass+Student+Union/@42.3921158,-72.5292869,17z/data=!4m2!3m1!1s0x0000000000000000:0x4cf4f7a50b4daa12">Find the Center</a></li>
+                          <li class="divider"></li>
+                            <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.672825169127!2d-72.52928692065429!3d42.39211578249243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4cf4f7a50b4daa12!2sUMass+Student+Union!5e0!3m2!1sen!2sus!4v1428017047788" width="200" height="200" frameborder="0" style="border:0"></iframe></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+              </li>
+
+
+          
+
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Find out about living off campus">Move in/out</a>
+                  <ul class="dropdown-menu multi-column columns-2">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="movingIn">Moving In</a></li>
+                          <li><a href="housemateAgreement">Housemate Agreement</a></li>
+                          <li><a href="rentersInsurance">Renters Insurance</a></li>
+                          <li><a href="securityDeposit">Security Deposits</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="turningOnUtils">Turning on Utilities</a></li>
+                          <li><a href="whatToPack">What to Pack</a></li>
+                          <li><a href="comcastAmherst">Comcast Cable in Amherst</a></li>
+                          <li><a href="storageCompanies">Storage Companies</a></li>
+                            <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+              </li>
+
+
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Find out about living off campus">Living Off Campus</a>
+                  <ul class="dropdown-menu multi-column columns-2">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/bylaws-and-conduct">Town By Laws and Student Conduct</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/emergency-preparedness">Emergency Preparedness</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/fire-safety">Fire Safety</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/personal_safety">Personal Safety</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/insurance">Insurance</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/winter-readiness">Winter Readiness</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/go_green">Go Green and Save</a></li>
+                          <li><a href="http://www.umass.edu/studentlife/ocsc/living/breaks">Preparing for Breaks</a></li>
+                            <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+              </li>
+
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" title=" Important Resources">FAQ's</a>
+                    <ul class="dropdown-menu">
+                      <li><%= link_to "Students/Tenants",   faqs_path %></li>
+                      <li><a href="#">Landlords</a></li>
+                      
+                    </ul>
+              </li>
+
+            
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" title=" Important Resources">Resources</a>
+                <ul class="dropdown-menu">
+                  <li><a href="movingResources">Move in/out</a></li>
+                  <li><a href="money">Money</a></li>
+                  <li><a href="partyTips">Safety</a></li>
+                  <li><a href="moreResources">More Resources</a></li>
+                </ul>
+          </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Rental listings">Rentals</a>
+                <ul class="dropdown-menu">
+                  <li><a href="searchRentals">Search Posted Listings</a></li>
+                  <li><a href="submitRental">Submit New Rental</a></li>
+                  <li><a href="editRental">Edit Rental Listing(s)</a></li>
+                  <li><a href="aptcomplex">Apartment Complexes</a></li>
+                  <li><a href="http://www.housing.umass.edu/aboutus/familyhousing/index.html">Family Housing</a></li>
+                </ul>
+          </li>
+
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Find out about living off campus">Housemates/Tenants</a>
+                  <ul class="dropdown-menu multi-column columns-2">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                        <li><a href="searchHousemates">Search Profiles</a></li>
+                        <li><a href="submitHousemateProfile">Submit a Profile</a></li>
+                        <li><a href="editHousemateProfile">Edit Profile</a></li>
+                      </div>
+                      <div class="col-sm-6">
+                        <ul class="multi-column-dropdown">
+                          <li><a href="#">Housemate Agreement</a></li>
+                          <li><a href="#">Establishing Household Rules</a></li>
+                          <li><a href="#">Talking about Money</a></li>
+                          <li><a href="#">Resolving Conflicts</a></li>
+                          <li><a href="#">Getting to Know</a></li>
+                          <li><a href="#">Communicating</a></li>
+                          <li><a href="#">Living with Housemates</a></li>
+                          <li><a href="#">Managing Money</a></li>
+                         
+                            <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </ul>
+              </li>
+
+
+
+
+            <li class="last" title="Contact us!"><%= link_to "Contact",   contact_path %></li>
+            
+
+          </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="register"><a href="register">Register/Sign In</a></li>
+            </ul>
+
+      </div>
+      </div>
+    
+
+<!-- Slideshow -->
+      <div class="slideshow">
+        <div class="gallery js-flickity" data-flickity-options='{"autoPlay": 4000, "pageDots": false}'>
+          <div class="gallery-cell">
+            <img src="assets/street_example.jpeg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="assets/skycraper_example.jpeg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="assets/shack_example.jpg"  alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="assets/interior.jpeg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="assets/beach_example.jpg" alt="" /></div>
+        </div>
+      </div>
+
+
+<!-- Yield Current Page  --> 
+
+    <div class="container">
+    <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+
+<!-- Footer -->
+      <div class="footer">
+        <div class="footerWrapper">
+        
+        
+      <div class="column">
+        <p class="footerHeader">Help:</p>
+          <ul class="footerSocialMedia">
+            <li><a href="#">Service Expectations</a></li>
+            <li><a href="#">Recent Scammers</a></li>
+            <li><a href="#">Website Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+       </div>
+
+       <div class="column">
+       <p class="footerHeader">More:</p>
+         <ul class="footerSocialMedia">
+            <li><a href="#">OCSS Student Jobs</a></li>
+            <li><a href="http://www.umass.edu">UMass Amherst</a></li>
+            <li><a href="http://www.housing.umass.edu">Residential Life</a></li>
+            <li><a href="http://www.umass.edu/dean_students">Dean of Students</a></li>
+            <li><a href="http://www.umass.edu/ccc">CCC</a></li>
+            <li><a href="https://moodle.umass.edu/">Moodle</a></li>
+          </ul>
+       </div>
+
+
+       <div class="column">
+        <p class="footerHeader">Follow Us On:</p>
+        <ul class="footerList">
+          <li><a href="https://www.facebook.com/offcampuslifeatumassamherst"><img src="<%=asset_path "facebook.png" %>" style="width:40px; height:40px" alt="Facebook"></a></li>
+          <li><a href="https://instagram.com/umassocsc/"><img src="<%=asset_path "instagram.png" %>" style="width:40px; height:40px"  alt="Instagram"></li></a>
+          <li><a href="https://twitter.com/umocss"><img src="<%=asset_path "twitter.png" %>" style="width:40px; height:40px" alt="Twitter"></a></li>
+          <li><a href="https://www.youtube.com/user/UMassOffCampus"><img src="<%=asset_path "youtube.png" %>" style="width:40px; height:40px" alt="YouTube"></a></li>
+        </ul>
+      </div>
+
+      </div>
+ 
+  </body>
+</html>
+

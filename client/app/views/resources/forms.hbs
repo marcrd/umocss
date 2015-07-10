@@ -1,0 +1,62 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" %> 
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="<%=asset_path "" %>" media="screen">
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+<div class="vertical-menu">
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Housemates/Tenants</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="movingResources">Move in/out</a></li>
+        <li><a href="money">Money</a></li>
+        <li><a href="partyTips">Safety</a></li>
+
+         <li class="dropdown">
+          <a href="moreResources" class="dropdown-toggle" data-toggle="dropdown">More Resources<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="communityResources">Business and Community Resources</a></li>
+              <li><a href="campusResources">Campus Resources</a></li>
+              <li><a href="checklists">Checklists and Worksheets</a></li>
+              <li><a href="healthandsafeResources">Healthy and Safe Living</a></li>
+              <li><a href="housemateResources">Housemate Resources</a></li>
+              <li><a href="landlordResources">Landlord Resources</a></li>
+              <li><a href="moreResources">Non-Profit Orginizations</a></li>
+              <li><a href="otherResources">Other Resources</a></li>
+              <li><a href="parentResources">Parent Resources</a></li>
+              <li><a href="repairs">Repairs</a></li>
+              <li class="active"><a href="forms">Sample Forms</a></li>
+              <li><a href="studentTentantResources">Students/Tenants</a></li>
+              <li><a href="townResources">Town Resources</a></li>
+              <li><a href="transportationResources">Transportation</a></li>
+
+            </ul>
+        </li>
+        
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
+
+<div id="whitespace"></div>
+</div>

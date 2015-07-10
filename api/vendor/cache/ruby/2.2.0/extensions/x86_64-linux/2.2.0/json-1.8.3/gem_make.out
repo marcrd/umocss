@@ -1,0 +1,9 @@
+/usr/local/rvm/rubies/ruby-2.2.1-lsapi/bin/ruby -r ./siteconf20150709-21448-vxx2li.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install

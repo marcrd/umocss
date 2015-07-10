@@ -1,0 +1,101 @@
+
+
+$width-small: 500px;
+$width-medium: 800px;
+$width-lowres: 960px;
+$width-highres: 1080px;
+$width-hd: 1250px;
+$width-large: 1360px;
+
+.container {
+  width: 100%;
+}
+
+
+
+
+#mainAlert {
+ @media screen and (min-width: $width-large) {
+   width: 110%;
+   background-color: $orange2;
+   padding-left: 1.5%;
+   float: left;
+   color: #fff;
+   position:absolute;
+   top: 0px;
+  }
+
+  @media screen and ($width-lowres) {
+  }
+
+  @media screen and (min-width: $width-medium) {
+    
+  }
+  @media screen and (min-width: $width-small) {
+   
+  }
+
+}
+
+
+  /* Gallery  ===============================================================*/
+
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-cell {
+  width: 100%;
+
+    @media screen and (min-width: $width-large) {
+
+    height: 500px !important;
+
+   }
+
+    @media screen and (min-width: $width-hd) {
+
+      height: 400px !important;
+
+    }
+
+     @media screen and (min-width: $width-highres) {
+
+        height: 400px !important;
+     }
+
+      @media screen and (min-medium: $width-highres) { 
+
+        height: 300px !important;
+      }
+    
+
+}
+
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
